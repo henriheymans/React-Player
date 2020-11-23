@@ -1,0 +1,26 @@
+nav {
+  padding: 2rem;
+  box-shadow: 2px 2px 5px #f7f7f7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    font-family: $serif-font;
+    letter-spacing: 0.3px;
+    color: palevioletred;
+  }
+  button {
+    background: white;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #f7f7f7;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    svg {
+      margin-left: 5px;
+    }
+    &:hover {
+      filter: invert(1);
+    }
+  }
+}

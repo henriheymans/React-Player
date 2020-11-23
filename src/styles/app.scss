@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: #191919;
+}
+
+$serif-font: 'Merriweather', serif;
+$sansserif-font: 'Lato', sans-serif;
+
+@import './player';
+@import './song';
+@import './library';
+@import './nav';
+
+.player-container {
+  transition: 0.5s ease;
+  width: 100%;
+  margin-left: auto;
+}
+
+.library-opened {
+  .player-container {
+    transition: 0.5s ease;
+
+    width: calc(100% - 20rem);
+    margin-left: auto;
+  }
+  .library {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
